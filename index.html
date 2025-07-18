@@ -10,24 +10,24 @@
 <body>
     <!-- Header -->
      <header>
-        <nav class="mx-10 py-2 flex justify-between items-center">
+        <nav class="mx-10 py-2 w-11/12 md:container flex justify-between items-center">
             <!-- wrap logo -->
              <div class="flex items-center space-x-3">
-                <img src="./img/Logo ipsum.png" alt="Logo RevoU" width="50px">
+                <img src="./img/Logo ipsum.png" alt="Logo LearnCode" width="50px">
                 <h2 class="font-bold text-lg">LearnCode</h2>
              </div>
             <ul class="flex">
-                <li class="px-5 py-1 hover:text-gray-400"><a href="">Home</a></li>
-                <li class="px-5 py-1 hover:text-gray-400"><a href="">Courses</a></li>
-                <li class="px-5 py-1 hover:text-gray-400"><a href="">About Us</a></li>
-                <li class="px-5 py-1 hover:text-gray-400"><a href="">Contact</a></li>
+                <li class="px-5 py-1 hover:text-gray-400"><a href="#home">Home</a></li>
+                <li class="px-5 py-1 hover:text-gray-400"><a href="#courses">Courses</a></li>
+                <li class="px-5 py-1 hover:text-gray-400"><a href="#about us">About Us</a></li>
+                <li class="px-5 py-1 hover:text-gray-400"><a href="#contact us">Contact</a></li>
                 <li class="px-5 py-2 border rounded-xl bg-green-700 hover:bg-green-800 hover:text-gray-300 text-white"><a href="">Get Started</a></li>
             </ul>
         </nav>
      </header>
 
      <!-- Hero Section -->
-      <section class="bg-teal-50">
+      <section id="home" class="bg-teal-50">
         <div class="container mx-auto h-full flex items-center px-10 py-16">
             <!-- Teks Kiri -->
             <div class="w-1/2 pr-10">
@@ -35,8 +35,8 @@
                 <h1 class="text-4xl font-bold mb-3">Unlock Your Creative Potential</h1>
                 <p class="text-gray-600 mb-5">Transform your career with our comprehensive online courses. <br>Learn from industry experts and build real-world projects.</p>
                 <div class="flex gap-4">
-                    <a href="" class="bg-green-700 text-white py-2 px-4 rounded-xl hover:bg-green-800">Start Learning Now!</a>
-                    <a href="" class="bg-white border border-gray-400 text-gray-800 py-2 px-4 rounded-xl hover:bg-gray-100">View Courses</a>
+                    <a href="#why" class="bg-green-700 text-white py-2 px-4 rounded-xl hover:bg-green-800">Start Learning Now!</a>
+                    <a href="#courses" class="bg-transparent border border-gray-400 text-gray-800 py-2 px-4 rounded-xl hover:bg-gray-50">View Courses</a>
                 </div>
             </div>
             <!-- Gambar kanan -->
@@ -48,7 +48,7 @@
 
 
       <!-- why choose -->
-       <section class="bg-white py-16">
+       <section id="why" class="bg-white py-16">
         <div class="max-w-5xl mx-auto px-4 text-left">
             <h2 class="text-3xl font-bold mb-3 text-center">Why Choose Our Platform?</h2>
             <p class="text-gray-600 mb-10 text-center">Comprehensive learning experience designed to accelerate your growth in <br>UI/UX design and coding</p>
@@ -101,54 +101,97 @@
 
 
        <!-- Courses -->
-        <section id="courses" class="bg-gray-100 py-10 ">
-            <h3 class="text-3xl font-bold text-center mb-5">Popular Courses</h3>
-            <p class="text-center mb-10">Master the skills that matter in today's digital world</p>
-            <div class="grid grid-cols-4 container mx-auto gap-6">
-                <!-- Courses 1 -->
-                 <div class="shadow-xl ">
-                    <a href="">
-                        <img src="https://placehold.co/600x400" alt="Portofolio 1" class="w-full">
-                        <div class="bg-white py-3 px-5 ">
-                            <h4 class="text-center font-bold">Website 1</h4>
+        <section id="courses" class="bg-gray-100 py-16">
+            <div>
+                <h2 class="text-3xl font-bold mb-3 text-center">Popular Courses</h2>
+            <p class="text-gray-600 mb-10 text-center">Master the skills that matter in today's digital world</p>
+            </div>
+            <div class="max-w-6xl mx-auto px-4 grid md:grid-cols-3 gap-6">
+                
+                <!-- Card 1 -->
+                 <div class="bg-white rounded-xl shadow-md overflow-hidden">
+                    <img src="./img/UIUX Courses.jpg" alt="UI/UX Design" class="w-full h-40 object-cover">
+                    <div class="p-4">
+                        <span class="bg-lime-200 text-gray-800 text-xs px-2 py-1 rounded-full font-semibold">UI/UX Design</span>
+                        <div class="flex items-center text-sm text-gray-600 mt-3 space-x-4">
+                            <span><i class="fa-solid fa-clock mr-1"></i>42 hours</span>
+                            <span><i class="fa-solid fa-users mr-1"></i>127 students</span>
                         </div>
-                    </a>
-                 </div>
-
-                 <!-- Courses 2 -->
-                 <div class="shadow-xl ">
-                    <a href="">
-                        <img src="https://placehold.co/600x400" alt="Portofolio 2" class="w-full">
-                        <div class="bg-white py-3 px-5 ">
-                            <h4 class="text-center font-bold">Website 2</h4>
+                        <h3 class="text-lg font-bold mt-3">Fundamental UI/UX Design</h3>
+                        <p class="text-sm text-gray-600 mt-2">Learn design thinking, prototyping, and user research from scratch.</p>
+                        <p class="text-gray-400 mt-3 line-through">$199</p>
+                        <button class="mt-2 bg-emerald-700 hover:bg-emerald-800 text-white py-2 px-4 rounded-md w-full">Enroll Now</button>
+                    </div>
+                </div>
+                
+                <!-- Card 2 -->
+                 <div class="bg-white rounded-xl shadow-md overflow-hidden">
+                    <img src="./img/Full stack Course.jpg" alt="Web Development" class="w-full h-40 object-cover">
+                    <div class="p-4">
+                        <span class="bg-blue-200 text-gray-800 text-xs px-2 py-1 rounded-full font-semibold">Web Developer</span>
+                        <div class="flex items-center text-sm text-gray-600 mt-3 space-x-4">
+                            <span><i class="fa-solid fa-clock mr-1"></i>68 hours</span>
+                            <span><i class="fa-solid fa-users mr-1"></i>127 students</span>
                         </div>
-                    </a>
-                 </div>
-
-                 <!-- Courses 3 -->
-                 <div class="shadow-xl ">
-                    <a href="">
-                        <img src="https://placehold.co/600x400" alt="Portofolio 3" class="w-full">
-                        <div class="bg-white py-3 px-5 ">
-                            <h4 class="text-center font-bold">Website 3</h4>
+                        <h3 class="text-lg font-bold mt-3">Full-Stack Web Development</h3>
+                        <p class="text-sm text-gray-600 mt-2">Master HTML, CSS, JavaScript, React, and Node.js from beginner to pro.</p>
+                        <p class="text-gray-400 mt-3 line-through">$249</p>
+                        <button class="mt-2 bg-emerald-700 hover:bg-emerald-800 text-white py-2 px-4 rounded-md w-full">Enroll Now</button>
+                    </div>
+                </div>
+                
+                <!-- Card 3 -->
+                 <div class="bg-white rounded-xl shadow-md overflow-hidden">
+                    <img src="./img/React Native.jpg" alt="Mobile Dev" class="w-full h-40 object-cover">
+                    <div class="p-4">
+                        <span class="bg-yellow-200 text-gray-800 text-xs px-2 py-1 rounded-full font-semibold">Mobile Dev</span>
+                        <div class="flex items-center text-sm text-gray-600 mt-3 space-x-4">
+                            <span><i class="fa-solid fa-clock mr-1"></i>55 hours</span>
+                            <span><i class="fa-solid fa-users mr-1"></i>127 students</span>
                         </div>
-                    </a>
-                 </div>
-
-                 <!-- Courses 4 -->
-                 <div class="shadow-xl ">
-                    <a href="">
-                        <img src="https://placehold.co/600x400" alt="Portofolio 4" class="w-full">
-                        <div class="bg-white py-3 px-5 ">
-                            <h4 class="text-center font-bold">Website 4</h4>
-                        </div>
-                    </a>
-                 </div>
+                        <h3 class="text-lg font-bold mt-3">React Native Mobile Development</h3>
+                        <p class="text-sm text-gray-600 mt-2">Build cross-platform mobile apps with React Native and TypeScript.</p>
+                        <p class="text-gray-400 mt-3 line-through">$299</p>
+                        <button class="mt-2 bg-emerald-700 hover:bg-emerald-800 text-white py-2 px-4 rounded-md w-full">Enroll Now</button>
+                    </div>
+                </div>
             </div>
         </section>
 
-        <!-- Our Headquarter -->
-       <section id="headquarter" class="py-10 px-10">
+
+        <!-- About Us -->
+         <section id="about us" class="container mx-auto py-20">
+            <div class="flex space-x-10 items-start">
+                <img src="./img/office building.jpg" alt="office building" class="w-130 rounded">
+                <div>
+                    <h3 class="text-4xl font-bold mb-5">About LearnCode</h3>
+                    <p class="mb-5">LearnCode adalah perusahaan teknologi edukasi berbasis daring (online) yang menyediakan berbagai kursus keterampilan digital, seperti coding, desain, dan pengembangan aplikasi. 
+                        LearnCode dibangun dengan semangat untuk memberikan akses pembelajaran berkualitas tinggi kepada siapa pun, di mana pun, tanpa batasan ruang dan waktu.</p>
+                        <p class="mb-5 pb-5 border-b border-gray-700">Dengan pendekatan pembelajaran berbasis proyek (project-based learning) dan materi yang disusun oleh praktisi industri, LearnCode membantu peserta untuk tidak hanya belajar teori, tetapi juga siap menghadapi dunia kerja nyata. 
+                            Kami percaya bahwa setiap orang berhak memiliki kesempatan untuk berkembang melalui pendidikan yang inklusif dan relevan dengan perkembangan zaman.</p>
+                    <ul class="flex space-x-5">
+                        <li>
+                            <a href=""><i class="fa-brands fa-tiktok"></i></a>
+                        </li>
+                        <li>
+                            <a href=""><i class="fa-brands fa-instagram"></i></a>
+                        </li>
+                        <li>
+                            <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                        </li>
+                        <li>
+                            <a href=""><i class="fa-brands fa-square-x-twitter"></i></a>
+                        </li>
+                        <li>
+                            <a href=""><i class="fa-brands fa-youtube"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+         </section>
+
+         <!-- Our Headquarter -->
+       <section class="py-10 px-10 bg-gray-100">
         <div class="container mx-auto">
             <h3 class="text-3xl font-bold text-center mb-5">Our Headquarter</h3>
             <div class="flex justify-center gap-10 text-center">
@@ -180,48 +223,96 @@
                 </div>
             </div>
         </div>
-       </section>
+    </section>
 
 
-        <!-- Our Profile -->
-         <section class="container mx-auto py-20">
-            <div class="flex space-x-10 items-start">
-                <img src="./img/office building.jpg" alt="office building" class="w-115 h-100">
-                <div>
-                    <p class="mb-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, dolore?</p>
-                    <h3 class="text-4xl font-bold mb-5">About Our Company</h3>
-                    <p class="mb-5">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsum consectetur, unde, voluptatibus quo quod molestias possimus totam similique obcaecati nobis ullam modi fugiat quae vero necessitatibus eos eveniet voluptatem eaque..</p>
-                    <p class="mb-5">Visi <br> Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio, dicta.</p>
-                    <p class="mb-5 pb-5 border-b border-gray-700">Misi <br> Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, in?</p>
-                    <ul class="flex space-x-5">
-                        <li>
-                            <a href=""><i class="fa-brands fa-tiktok"></i></a>
-                        </li>
-                        <li>
-                            <a href=""><i class="fa-brands fa-instagram"></i></a>
-                        </li>
-                        <li>
-                            <a href=""><i class="fa-brands fa-linkedin"></i></a>
-                        </li>
-                        <li>
-                            <a href=""><i class="fa-brands fa-square-x-twitter"></i></a>
-                        </li>
-                        <li>
-                            <a href=""><i class="fa-brands fa-youtube"></i></a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-         </section>
+    <!-- Testtimoni -->
+     <section class="bg-white py-16">
+  <div class="max-w-6xl mx-auto px-4 text-center">
+    <h2 class="text-2xl font-bold mb-2">What Our Students Say</h2>
+    <p class="text-gray-600 mb-10">
+      Join thousands of successful graduates who transformed their careers
+    </p>
+
+    <div class="grid md:grid-cols-3 gap-6">
+      
+      <!-- Testimonial 1 -->
+      <div class="bg-white p-6 rounded-xl shadow-md text-left">
+        <div class="mb-3 text-yellow-400">
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+        </div>
+        <p class="text-gray-800 mb-4">
+          "The UI/UX course completely changed my career trajectory.
+          The hands-on projects and mentorship were invaluable."
+        </p>
+        <div class="flex items-center gap-3 mt-4">
+          <img src="./img/keysia nai.jpg" alt="Keysia Nai" class="w-10 h-10 rounded-full object-cover">
+          <div>
+            <p class="font-bold">Keysia Nai</p>
+            <p class="text-sm text-gray-600">Senior UX Designer at Google</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Testimonial 2 -->
+      <div class="bg-white p-6 rounded-xl shadow-md text-left">
+        <div class="mb-3 text-yellow-400">
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+        </div>
+        <p class="text-gray-800 mb-4">
+          "The UI/UX course completely changed my career trajectory.
+          The hands-on projects and mentorship were invaluable."
+        </p>
+        <div class="flex items-center gap-3 mt-4">
+          <img src="./img/Mike Profile.jpg" alt="Mike Rodriguez" class="w-10 h-10 rounded-full object-cover">
+          <div>
+            <p class="font-bold">Mike Rodriguez</p>
+            <p class="text-sm text-gray-600">Full Stack Developer at Spotify</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Testimonial 3 -->
+      <div class="bg-white p-6 rounded-xl shadow-md text-left">
+        <div class="mb-3 text-yellow-400">
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+        </div>
+        <p class="text-gray-800 mb-4">
+          "The UI/UX course completely changed my career trajectory.
+          The hands-on projects and mentorship were invaluable."
+        </p>
+        <div class="flex items-center gap-3 mt-4">
+          <img src="./img/Sarah Chen Profile.jpg" alt="Sarah Chen" class="w-10 h-10 rounded-full object-cover">
+          <div>
+            <p class="font-bold">Sarah Chen</p>
+            <p class="text-sm text-gray-600">Product Designer at Airbnb</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
          <!-- Contact Us -->
-          <section id="contact us" class="bg-gray-200 py-10 px-10">
+          <section id="contact us" class="bg-gray-100 py-10 px-10">
             <div class="container mx-auto">
                 <p class="text-3xl font-bold text-center mb-5">Contact Us</p>
             </div>
             <form class="w-full max-w-md border p-6 rounded shadow-md space-y-4 bg-white ml-0">
                 <!-- Nama -->
-                 <div>
+                 <div class="flex items-center">
                     <label class="w-32" for="nama">Nama :</label>
                     <input type="text" id="nama" name="nama" placeholder="Nama" class="flex-1 border rounded px-3 py-1 focus:outline-none focus:ring-blue-400">
                  </div>
@@ -255,7 +346,7 @@
 
                 <!-- Tombol Submit -->
                  <div class="text-center pt-2">
-                    <button type="submit" class="w-full bg-gray-200 text-black py-2 rounded hover:bg-gray-300 transition">Submit</button>
+                    <button type="submit" class="w-full bg-green-700 text-white py-2 rounded hover:bg-green-800 transition">Submit</button>
                 </div>
             </form>
           </section>
